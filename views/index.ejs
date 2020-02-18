@@ -4,16 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Estonia</title>
 </head>
 <body>
-    <p><em>Estonia</em></p>
-    <p><em>Europe</em></p>
-    <p><em>372</em></p>
-    <p><em>Estonian</em></p>
-    <p><em>1315944</em></p>
-    <p><em>.ee</em></p>
-    <p><em>EST</em></p>
-    <p><em>€</em></p>
+    <div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name of country</th>
+                <th scope="col">Region</th>
+                <th scope="col">Calling code</th>
+                <th scope="col">Language</th>
+                <th scope="col">Population</th>
+                <th scope="col">Top level domain</th>
+                <th scope="col">Alpha3 code</th>
+                <th scope="col">Currency</th>
+                <th scope="col">National flag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= data[0].name%></td> 
+                <td><%= data[0].region%></td>
+                <td><%= data[0].callingCodes[0]%></td>
+                <td><%= data[0].languages[0].name%></td>
+                <td><%= data[0].population%></td>  
+                <td><%= data[0].topLevelDomain%></td>
+                <td><%= data[0].alpha3Code%></td> 
+                <td><%= data[0].currencies[0].symbol%></td> 
+                <td><img src=<%= data[0].flag%> alt=""></td>   
+        </tbody>
+    </table>      
+</div>
 </body>
 </html>

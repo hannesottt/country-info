@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
 	axios.get(requestURL)
 		.then(function (response) {
 			console.log(response.data);
+			console.log(response.data[0].languages);
+			console.log(response.data[0].currencies);
 			res.render('index', {data: response.data});
 		})
 		.catch(function (error) {
