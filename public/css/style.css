@@ -1,0 +1,14 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #222222;
+    color: white;
+}
+.table {
+    color: whitesmoke;
+    margin-top: 20px;
+}
+.table img {
+    width: 100px;
+}
